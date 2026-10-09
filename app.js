@@ -33,7 +33,7 @@ let treeSpeed = -4;
 // Game State
 let gameover = false;
 let score = 0;
-let frameCount = 0; // Moved outside update() so it tracks properly!
+let frameCount = 0;
 
 window.onload = function() {
     // Display setup
@@ -44,11 +44,11 @@ window.onload = function() {
     
     // Load player image
     playerImg = new Image();
-    playerImg.src = "./image/player.png"; 
+    playerImg.src = "./image/lita.png"; 
 
     // Load tree image
     treeImg = new Image();
-    treeImg.src = "./image/tree.png";
+    treeImg.src = "./image/yoha.jpg";
 
     // Start loop and spawners
     requestAnimationFrame(update);
@@ -119,11 +119,11 @@ function update() {
         score++;
     }
 
-    // Display score
-    context.font = "bold 20px Arial";
+    // Display score 
+    context.font = "bold 24px Arial";
     context.fillStyle = "black";
     context.textAlign = "right";
-    context.fillText("Score: " + score, boardWidth - 20, 30);
+    context.fillText("Score: " + score, boardWidth - 40, 40);
 }
 
 function createTree() {
