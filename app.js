@@ -44,11 +44,11 @@ window.onload = function() {
     
     // Load player image
     playerImg = new Image();
-    playerImg.src = "./image/lita.png"; 
+    playerImg.src = "./image/player.png"; 
 
     // Load tree image
     treeImg = new Image();
-    treeImg.src = "./image/yoha.jpg";
+    treeImg.src = "./image/tree.png";
 
     // Start loop and spawners
     requestAnimationFrame(update);
